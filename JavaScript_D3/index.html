@@ -3,38 +3,45 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-            <title> Geog575_Unit-2</title>
+            <title></title>
 
         <!--put your external stylesheet links here-->
-        <link rel="stylesheet" href="lib/leaflet/leaflet.css">
         <link rel="stylesheet" href="css/style.css">
         <!--[if IE<9]>
             <link rel="stylesheet" href="css/style.ie.css">
         <![endif]-->
-        
-        <!--you can also place internal styles here
-        place these within <style> tags-->  
+
+         <!--you can also place internal styles here;
+             place these within <style> tags-->
         
     </head>
 
-    <body>
-        <div id="h1">
-           
-        </div>
-
+    <body >
         <!--put your initial page content here-->
-        <div id="myMap" >  </div>
+    <div id = "h1"></div>
 
-        <div id="panel">  </div>
+    <div class = "credits"> 
+        <p> 
+            This project aims to visualize socioeconomic indicators such as poverty, literacy, population, and GDP leading to each state's crime rate. To achieve this goal, I use MAP and Dot line plot visualization techniques using D3 JavaSript to help illustrate the associations between these variables. As a result, gain valuable insights into the factors that contribute to crime rates in different regions of the USA, and use this information to inform policy decisions aimed at reducing crime rates and improving the overall well-being of citizens.
+        </p>
+        <p style="text-align:center;">
+            Data Source: <a href = 'https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG', style="color: aliceblue;">Crime Rate</a> | <a href = 'https://worldpopulationreview.com/state-rankings/state-densities', style="color: aliceblue;">Population</a> | <a href = 'https://worldpopulationreview.com/state-rankings/gdp-by-state', style="color: aliceblue;">GDP</a> | <a href = 'https://worldpopulationreview.com/state-rankings/poverty-rate-by-state', style="color: aliceblue;">Poverty</a> | <a href = 'https://worldpopulationreview.com/state-rankings/us-literacy-rates-by-state', style="color: aliceblue;">Literacy</a>
+    </div>
 
-        <div id = "credits"> </div>
+    
 
-        <!--you can also use this space for internal scripts;
-        place these within <script> tags-->
+    <!-- put your credits content here -->
+    
 
+        
         <!--put your external script links here-->
-        <script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="lib/topojson.min.js"></script>
+        <script type="text/javascript" src="lib/d3.min.js"></script>
+        <script type="text/javascript" src="js/choropleth.js"></script>
+        
        
+        
+
+
     </body>
 </html>
